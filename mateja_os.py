@@ -1,5 +1,13 @@
 PASSWORT = '1234'
 
+import sys
+
+import random
+
+import time
+
+import os
+
 def hauptmenu():
     print ('---------------Menu---------------')
     print ('      Type 1 to view Info')
@@ -25,22 +33,22 @@ def NICHT_VERSTEHEN():
 def random_zahl_spiel_erklärung():
     print ('You need to choose a number between 1-10. The program is going to choose the winning number and if you have chosen that exact number your will win the game.')
 
-import os
-
 def abstand():
     if os.name == "nt":
         os.system('cls')
     else:
         os.system('clear')
 
-import sys
+def lade_animation():
+    animation = [".  ", ".. ", "..."]
+    for i in animation:
+        print (f"\rLoading{i}", end="")
+        time.sleep(0.5)
 
-import random
-
-
+lade_animation()
 programm_neustart = False
-
 def MatEjaOS():
+
     global programm_neustart
     abstand()
     modus = 'passwort'
