@@ -19,8 +19,8 @@ def hauptmenu():
 
 def INFOS():
     print ('----------INFORMATION----------')
-    print ('    name: Mateja')
-    print ('    hobbys: Music, IT, HiFi')
+    print ('    Name: Mateja')
+    print ('    Hobbies: Music, IT, HiFi')
     print ('-------------------------------')
 
 def NICHT_VERSTEHEN():
