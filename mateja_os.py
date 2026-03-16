@@ -40,15 +40,18 @@ def abstand():
         os.system('clear')
 
 def lade_animation():
-    animation = [".  ", ".. ", "..."]
-    for i in animation:
-        print (f"\rLoading{i}", end="")
-        time.sleep(0.5)
+    for _ in range(3):
+        animation = [".  ", ".. ", "..."]
+        for i in animation:
+            print (f"\rStarting MatEjaOS 1.0, please wait{i}", end="")
+            time.sleep(0.6)
 
 lade_animation()
+abstand()
+print("Loading complete, welcome to MatEjaOS 1.0!")
+time.sleep(2)
 programm_neustart = False
 def MatEjaOS():
-
     global programm_neustart
     abstand()
     modus = 'passwort'
